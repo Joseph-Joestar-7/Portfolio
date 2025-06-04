@@ -49,11 +49,13 @@
   /* —— Headings —— */
   h1 {
     font-size: 3rem;
+    color:#4400fff3;
     margin-bottom: 0.5rem;
   }
   .subtitle {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    color:#05784e;
   }
   .location {
     font-size: 1rem;
@@ -62,11 +64,17 @@
   h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color:#8b2424;
   }
   h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
+    color:#1b38bc;
+  }
+  .about
+  {
+    color:#ffffff;
   }
   
   /* —— Social icons —— */
