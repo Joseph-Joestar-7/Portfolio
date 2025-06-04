@@ -1,291 +1,307 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* —— Global reset & base —— */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-section {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-}
-
-/* Header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-}
-
-header .social-links a {
-    color: #ffa500;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header .social-links a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styles */
-section {
-    padding: 2rem;
-    text-align: center;
-}
-
-/* About Section */
-#about {
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 3rem 1rem;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-}
-
-#about h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-#about p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* Skills Section */
-#skills {
-    background-color: #333;
-    color: #fff;
-    padding: 3rem 1rem;
-    text-align: center;
-    border-bottom: 2px solid #222;
-}
-
-#skills h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-#skills h3 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    color: #ffa500;
-    letter-spacing: 1px;
-}
-
-/* Category Card */
-.category-card {
-    background-color: #222;
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin: 1rem;
-    color: #ffa500;
-    text-align: center;
-    width: 260px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* —— Carousel container —— */
+  .carousel {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.category-card h4 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    color: #ffa500;
-}
-
-/* Skill Container */
-.skill-container {
+    width: 300vw;           /* three slides */
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* —— Each slide —— */
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
     justify-content: center;
-    margin-top: 1rem;
-}
-
-/* Skill Card */
-.skill-card {
-    background-color: #000000;
-    color: #ffa500;
-    width: 100px;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 0.5rem 0;
-}
-
-.skill-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-.skill-card img {
+    text-align: center;
+    padding: 2rem;
+  }
+  .slide.home {
+    background: #121213;
+    color: #333;
+  }
+  .slide.skills {
+    background: #121213;
+    color: #333;
+  }
+  .slide.projects {
+    background: #121213;
+    color: #333;
+  }
+  
+  /* —— Content wrapper —— */
+  .content {
+    max-width: 800px;
+  }
+  
+  /* —— Headings —— */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .location {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* —— Social icons —— */
+  .social-icons a {
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    color: #333;
     width: 40px;
     height: 40px;
-    margin-bottom: 0.5rem;
-}
-
-.skill-card p {
-    margin: 0;
-    font-size: 1rem;
-    color: #fff;
-}
-
-
-/* Education Section */
-#education {
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 3rem 1rem;
-    text-align: center;
-}
-
-#education h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-#education p {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-    max-width: 600px;
-    margin: 0.5rem auto;
-}
-
-#education strong {
+    line-height: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
     font-size: 1.2rem;
-    color: #555;
-}
-
-/* Projects Section */
-#projects {
-    background-color: #121212;
+  }
+  .social-icons a:hover {
+    background: #1b38bc;
     color: white;
-    padding: 2rem;
-}
-
-.project-container {
+  }
+  
+  /* —— Skill icons row —— */
+  .skills-row {
     display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
     justify-content: center;
-}
-
-.project-card {
-    background-color: #1a1a1a;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-}
-
-/* Project Card Images */
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-card.portrait img {
-    object-position: top;
-}
-
-.project-content {
-    padding: 1rem;
-}
-
-.project-content h3 {
-    font-size: 1.2rem;
-    color: #ffa500;
-    margin-bottom: 0.5rem;
-}
-
-.project-content p {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    color: #ddd;
-}
-
-.tech-stack {
+    flex-wrap: wrap;
+    gap: 1.5rem;
     margin-bottom: 1rem;
+  }
+  .skills-row i,
+  .skills-row img {
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+  }
+  .colored {
+    color: #00aaff;
+  }
+  
+/* 1) Make the Projects slide scrollable, start content at top, but keep horizontal centering */
+.slide.projects {
+  
+  /* stack content from top but center horizontally */
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  /* allow internal vertical scrolling */
+  overflow-y: auto;
+  padding: 2rem 1rem 4rem; /* 2rem top, 1rem sides, 4rem bottom */
 }
 
-.tech-stack span {
-    background-color: #333;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    margin-right: 0.5rem;
-    font-size: 0.8rem;
-    color: #f3f3f3;
+/* Make sure the .content wrapper does not stretch full height */
+.slide.projects .content {
+  width: 100%;
+  max-width: 800px;
+  /* let it grow vertically as needed; parent slide handles scrolling */
+  flex: 0 0 auto;
 }
 
-.project-content a {
-    color: #ffa500;
-    text-decoration: none;
-    font-weight: bold;
+/* 2) Each tech‐stack heading is centered */
+.project-group h3 {
+  font-size: 1.5rem;
+  color: #6400a7;
+  margin: 1.5rem 0 1rem; /* space above and below */
+  text-align: left;       /* or center if you prefer: text-align: center; */
 }
 
-.project-content a:hover {
-    text-decoration: underline;
+
+
+/* 3) The container that holds all cards in this group: vertical stack */
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+/* 4) Individual project card: horizontal "pill" with border */
+.project-card {
+  display: flex;
+  flex-direction: row;
+  background: #1e1d1d7b;
+  border: 2px solid #333; 
+  padding: 5px 5px 5px;      /* black border */
+  border-radius: 12px;          /* rounded corners */
+  overflow: hidden;             /* clip anything that overflows */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-footer p {
-    margin: 0.5rem 0;
+/* Lift slightly on hover */
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-footer .social-links a {
-    color: #ffa500;
-    margin: 0 10px;
-    text-decoration: none;
+/* 5) Left side: fixed‐size image container */
+.card-image {
+  flex: 0 0 140px;             /* 140px wide, never shrink or grow */
+  height: 140px;               /* match width for square aspect */
+  background: #000;            /* fallback if no img */
+  position: relative;
 }
 
-footer .social-links a:hover {
-    text-decoration: underline;
+/* If you’re using an <img> inside, make it fill that box */
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+/* 6) Right side: project info */
+.project-info {
+  flex: 1;                    /* take all remaining horizontal space */
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 7) Top row in project‐info: title + links aligned horizontally */
+.project-header {
+  display: flex;
+  justify-content: space-between;  /* title on left, links on right */
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+/* Project title styling */
+.project-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Links on the right */
+.project-links a {
+  font-size: 0.9rem;
+  color: #00aaff;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  transition: color 0.2s;
+}
+.project-links a:first-child {
+  margin-left: 0; /* no extra space before first link */
+}
+.project-links a:hover {
+  color: #005f7f;
+}
+
+/* 8) Description text */
+.project-desc {
+  font-size: 0.9rem;
+  color: #cfc9c9;
+  margin: 0.25rem 0 0.75rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Tech‐stack line at the bottom */
+.project-techstack {
+  font-size: 0.85rem;
+  color: #cd1b89;
+  text-align: left;
+  margin-top: auto; /* push to bottom of flex container if space allows */
+}
+
+/* 9) Small responsive tweak: if viewport is narrow, let card image shrink a bit */
+@media (max-width: 600px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .card-image {
+    width: 100%;
+    height: 180px; /* taller for a portrait style */
+  }
+  .project-info {
+    padding: 0.75rem 1rem;
+  }
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project-links {
+    margin-top: 0.5rem;
+  }
+}
+  
+  /* —— Bottom floating nav —— */
+  .nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  background: rgba(43, 42, 42, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+  z-index: 100; /* ensure it floats above content */
+}
+
+/* Each clickable item */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 40px;
+  transition: background 0.25s, transform 0.25s;
+}
+
+/* The text label inside each nav-item */
+.nav-label {
+  font-size: 0.9rem;
+  color: #444;
+  transition: color 0.25s;
+}
+
+/* Hover: highlight background and label color */
+.nav-item:hover {
+  background: rgba(0, 170, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-item:hover .nav-label {
+  color: #00ffa2;
+}
+
+/* Example “active” state: you can toggle this class via JS */
+.nav-item.active {
+  background: #00ffa2ad;
+}
+
+.nav-item.active .nav-label {
+  color: #fff;
+}
+  

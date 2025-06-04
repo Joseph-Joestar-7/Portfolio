@@ -1,174 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritaban Chaudhuri | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritaban Chaudhuri | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
+  <div class="carousel">
+
+    <!-- Home Slide -->
+    <section class="slide home" id="home">
+      <div class="content">
         <h1>Ritaban Chaudhuri</h1>
-        <p>Computer Science and Engineering Student | Game Developer | Android Developer</p>
-        <p>Kolkata, West Bengal | <a href="mailto:zeusxr7i@gmail.com">zeusxr7i@gmail.com</a></p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/ritaban-chaudhuri/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Joseph-Joestar-7" target="_blank">GitHub</a>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Motivated, responsible and hard-working Computer Science and Engineering student at IIIT Kalyani, actively seeking
-            opportunities to leverage technical skills and collaborate within diverse teams. Enthusiastic about contributing
-            innovative solutions, I am eager to showcase my capabilities in refining expertise through immersive and dynamic
+        <p class="subtitle"><i class="fa-solid fa-gamepad"></i>Game Developer | Backend Enthusiast</p>
+        <p><i class="fa-solid fa-location-dot"></i>Kolkata, India</p>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>Motivated, responsible and hard-working Computer Science and Engineering student at IIIT Kalyani, actively
+            seeking
+            opportunities to leverage technical skills and collaborate within diverse teams. Enthusiastic about
+            contributing
+            innovative solutions, I am eager to showcase my capabilities in refining expertise through immersive and
+            dynamic
             challenges. </p>
+        </section>
+        <div class="social-icons">
+          <a href="https://github.com/Joseph-Joestar-7" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/ritaban-chaudhuri/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:zeusxr7i@gmail.com" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
+    <!-- Skills Slide -->
+    <section class="slide skills" id="skills">
+      <div class="content">
         <h2>Skills</h2>
-        
+
         <h3>Programming Languages</h3>
-        <div class="skill-container">
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Icon">
-                <p>C++</p>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Icon">
-                <p>C</p>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# Icon">
-                <p>C#</p>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Icon">
-                <p>Java</p>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin Icon">
-                <p>Kotlin</p>
-            </div>
-            <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon">
-                <p>Python</p>
-            </div>
+        <div class="skills-row">
+          <i class="devicon-c-plain colored" title="C"></i>
+          <i class="devicon-cplusplus-plain colored" title="C++"></i>
+          <i class="devicon-csharp-plain colored" title="C#"></i>
+          <i class="devicon-python-plain colored" title="Python"></i>
+          <i class="devicon-java-plain colored" title="Java"></i>
+          <i class="devicon-kotlin-plain colored" title="Kotlin"></i>
         </div>
-        
-        <h3>Development Skills</h3>
-        <div class="skill-container">
-            <!-- Android Development Card -->
-            <div class="category-card">
-                <h4>Android Development</h4>
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin Icon">
-                    <p>Kotlin</p>
-                </div>
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg" alt="Jetpack Compose Icon">
-                    <p>Jetpack Compose</p>
-                </div>
-            </div>
-            
-            <!-- Game Development Card -->
-            <div class="category-card">
-                <h4>Game Development</h4>
-                <div class="skill-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/SFML_Logo.svg" alt="SFML Icon">
-                    <p>SFML</p>
-                </div>
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg" alt="OpenGL Icon">
-                    <p>OpenGL</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/unreal-engine-svgrepo-com.svg" alt="Unreal Engine Icon">
-                    <p>Unreal Engine</p>
-                </div>
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity Icon">
-                    <p>Unity</p>
-                </div>
-            </div>
+
+        <h3>Game Development</h3>
+        <div class="skills-row">
+          <img src="images/unreal-engine-svgrepo-com.svg" alt="Unreal Engine" title="Unreal Engine" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" title="Unity" />
+          <i class="devicon-opengl-plain colored" title="OpenGL"></i>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/SFML_Logo.svg" alt="SFML" title="SFML" />
         </div>
-    </section>    
-    
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>IIIT Kalyani, West Bengal</strong> – B.Tech in Computer Science and Engineering (2023-2027)</p>
-        <p><strong>National Gems Higher Secondary School</strong> – Indian School Certificate (ISC) (2007-2022)</p>
+
+        <h3>Backend</h3>
+        <div class="skills-row">
+          <i class="devicon-flask-original white" title="Flask"></i>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
+    <!-- Projects Slide -->
+    <section class="slide projects" id="projects">
+      <div class="content">
+        <h2>GameDev Projects</h2>
+
+        <!-- Unreal Engine 5 -->
+        <div class="project-group">
+          <h3>Unreal Engine 5</h3>
+          <div class="project-cards">
+            <!-- Card 1 -->
             <div class="project-card">
-                <img src="images/breakout-blitz.png" alt="Breakout Blitz">
-                <div class="project-content">
-                    <h3>Breakout Blitz</h3>
-                    <p>Breakout-style game using ECS and SFML, featuring ball movement, paddle control, and dynamic collision handling.</p>
-                    <div class="tech-stack">
-                        <span>C++</span><span>SFML</span>
-                    </div>
-                    <a href="https://github.com/Joseph-Joestar-7/Breakout-Blitz" target="_blank">GitHub</a>
+              <div class="card-image">
+                <!-- replace src with your actual screenshot or placeholder -->
+                <img src="images/flickering.png" alt="Hoverbike Adventure" />
+                <!-- if you don’t have an image yet, you can put a placeholder <div> instead:
+            <div class="card-image--placeholder">Picture</div>
+            -->
+              </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Flickering (Formerly Unbinding)</h4>
+                  <div class="project-links">
+                    <a href="https://drive.google.com/drive/folders/1LDafxmPzAjU6gIWWHN2sgbMDIxlcqwd8"
+                      target="_blank">Google Drive For Unbinding</a> |
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7335572073618055169/">Demo Video</a>
+                  </div>
                 </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="images\polygon-slayer.png" alt="Polygon Slayer">
-                <div class="project-content">
-                    <h3>Polygon Slayer</h3>
-                    <p>Fast-paced arcade game with procedural enemy generation, player abilities, and collision handling.</p>
-                    <div class="tech-stack">
-                        <span>C++</span><span>SFML</span>
-                    </div>
-                    <a href="https://github.com/Joseph-Joestar-7/Polygon-Slayer" target="_blank">GitHub</a>
-                </div>
-            </div>
-    
-            <div class="project-card portrait">
-                <img src="images/reflect.jpeg" alt="Reflect">
-                <div class="project-content">
-                    <h3>Reflect</h3>
-                    <p>Android app for mental well-being that tracks mood patterns and visualizes emotional trends.</p>
-                    <div class="tech-stack">
-                        <span>Kotlin</span><span>Android Views</span>
-                    </div>
-                    <a href="https://devfolio.co/projects/reflect-f427" target="_blank">Devfolio</a> |
-                    <a href="https://github.com/Joseph-Joestar-7/reflect" target="_blank">GitHub</a>
-                </div>
+                <p class="project-desc">
+                  Originally developed as Unbinding for Advitiya 2025 Game Jam under the theme “Broken”. A first-person
+                  horror game where the player repairs electrical devices alone at night while evading a hostile entity.
+                  Featured overlay materials, modular interactions, multiple endings, and basic AI.
+                  Now rebranded and expanded as Flickering, with improved level design, press-and-hold interaction
+                  support, modular environment design, and a responsive warning UI for unsafe repair attempts.
+                  Currently implementing advanced ghost AI, multiple endings, and corresponding ending screens.
+                </p>
+                <div class="project-techstack">Unreal Engine 5 | Unreal AI | Blueprints</div>
+              </div>
             </div>
 
-            <div class="project-card portrait">
-                <img src="images/graphing-calc.png" alt="Graphing Calculator">
-                <div class="project-content">
-                    <h3>Graphing Calculator</h3>
-                    <p>This project is a Graphing Calculator implemented using OpenGL, GLEW and GLFW. It allows users to graph various mathematical functions including trigonometric, linear, quadratic, cubic, power, exponential, logarithmic, and modulus functions.</p>
-                    <div class="tech-stack">
-                        <span>C++</span><span>OpenGL</span>
-                    </div>
-                    <a href="https://github.com/Joseph-Joestar-7/Graphing-Calculator" target="_blank">GitHub</a>
-                </div>
-            </div>
+
+          </div>
         </div>
+
+        <!-- Unity -->
+        <div class="project-group">
+          <h3>Unity</h3>
+          <div class="project-cards">
+            <!-- Card 1 -->
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/kitchenchaos.png" alt="Rabbit Carrot Collector" />
+              </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Kitchen Chaos</h4>
+                  <div class="project-links">
+                    <a href="https://rit7.itch.io/kitchen-chaos" target="_blank">Itch.io</a>
+                  </div>
+                </div>
+                <p class="project-desc">
+                  Developed alongside CodeMonkey’s 10-hour Unity course, focusing on clean architecture with
+                  ScriptableObjects, Unity’s new Input System, and event-driven state machines.
+                  Expanded with custom gameplay features such as a kitchen item restocking system, improved UI
+                  responsiveness, and smoother animations using Animator Controllers.
+                  Also explored Shader Graph and separation of logic for scalable and maintainable gameplay design.
+                </p>
+                <div class="project-techstack">Unity | C# | Microsoft Visual Studio</div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- SFML -->
+        <div class="project-group">
+          <h3>SFML</h3>
+          <div class="project-cards">
+            <!-- Card 1 -->
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/breakout-blitz.png" alt="Sorting Visualizer" />
+              </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Breakout Blitz</h4>
+                  <div class="project-links">
+                    <a href="https://github.com/your-repo-sorting-visualizer" target="_blank">GitHub</a>
+                  </div>
+                </div>
+                <p class="project-desc">
+                  "Breakout Blitz" is a modern reimagining of the classic Breakout game, developed in C++ using the SFML
+                  library and an ECS (Entity-Component-System) architecture. The game incorporates advanced mechanics,
+                  including dynamic brick destruction, a lifespan feature with visual feedback, and smooth animations.
+                  Perfect for enthusiasts interested in game architecture, physics, and component-based design.
+                </p>
+                <div class="project-techstack">SFML | C++ </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/polygon-slayer.png" alt="Networked Pong" />
+              </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Polygon Slayer</h4>
+                  <div class="project-links">
+                    <a href="https://github.com/your-repo-pong-network" target="_blank">GitHub</a>
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A fast-paced top-down arcade shooter developed using C++ and SFML. Features procedurally generated
+                  polygonal enemies, each with unique shapes and movement behaviors that affect gameplay strategy.
+                  Built with a custom Entity-Component System (ECS) for scalability, along with optimized collision
+                  detection and rendering pipelines. Includes unique player abilities, responsive controls, and polished
+                  moment-to-moment gameplay with increasing difficulty.
+                </p>
+                <div class="project-techstack">SFML | C++</div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/Starfield.png" alt="Sorting Visualizer" />
+              </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Starfield Simulator</h4>
+                  <div class="project-links">
+                    <a href="https://github.com/Joseph-Joestar-7/Starfield_Simulator" target="_blank">GitHub</a> |
+                    <a href="https://www.youtube.com/watch?v=We7SaipzKuM" target="_blank">Youtube</a>
+                  </div>
+                </div>
+                <p class="project-desc">
+                  Starfield Simulation built using C++ with SFML, and Dear ImGui.
+                  This was a weekend experiment to brush up on SFML and ImGui, combining real-time graphics with
+                  interactive
+                  UI. The simulation visualizes stars moving toward the viewer using basic 3D perspective projection,
+                  with
+                  real-time speed control via a simple ImGui interface.
+                </p>
+                <div class="project-techstack">SFML | C++ | ImGUI </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
     </section>
-    
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Ritaban Chaudhuri</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/ritaban-chaudhuri/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Joseph-Joestar-7" target="_blank">GitHub</a>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+  </div>
+
+  <!-- Clean Bottom Nav -->
+  <div class="nav">
+    <div class="nav-item" onclick="goToSlide(0)">
+      <div class="nav-label">Home</div>
+    </div>
+    <div class="nav-item" onclick="goToSlide(1)">
+      <div class="nav-label">Skills</div>
+    </div>
+    <div class="nav-item" onclick="goToSlide(2)">
+      <div class="nav-label">Projects</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
