@@ -1,251 +1,276 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ritaban Chaudhuri | Portfolio</title>
-
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Pizza Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-  <div class="carousel">
-
-    <!-- Home Slide -->
-    <section class="slide home" id="home">
-      <div class="content">
-        <h1>Ritaban Chaudhuri</h1>
-        <p class="subtitle"><i class="fa-solid fa-gamepad"></i>Game Developer | Backend Enthusiast</p>
-        <p><i class="fa-solid fa-location-dot"></i>Kolkata, India</p>
-        <section id="about">
-          <h2>About Me</h2>
-          <p class="about">Computer Science and Engineering student at IIIT Kalyani with a strong foundation in game development. Skilled in using Unreal Engine and Unity to build interactive experiences. Passionate about combining creativity with technical skills to solve real-world challenges. Looking to contribute to collaborative teams and grow through hands-on experience in the game development industry.</p>
-        </section>
-        <br>
-        <div class="social-icons">
-          <a href="https://github.com/Joseph-Joestar-7" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/ritaban-chaudhuri/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="mailto:zeusxr7i@gmail.com" aria-label="Email">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
+    <div class="space-background">
+        <div class="stars"></div>
+        <div class="floating-planets">
+            <div class="planet planet-1"></div>
+            <div class="planet planet-2"></div>
+            <div class="planet planet-3"></div>
         </div>
-
-        <div class="resume-button-container">
-      <a href="resume/RitabanChaudhuri_Resume.pdf" class="btn-resume" download>Download Resume</a>
+        <div class="pizza-doodles">
+            <div class="pizza pizza-1">🍕</div>
+            <div class="pizza pizza-2">🍕</div>
+            <div class="pizza pizza-3">🍕</div>
+            <div class="pizza pizza-4">🍕</div>
+        </div>
     </div>
 
-      </div>
-    </section>
-
-    <!-- Skills Slide -->
-    <section class="slide skills" id="skills">
-      <div class="content">
-        <h2>Skills</h2>
-
-        <h3>Programming Languages</h3>
-        <div class="skills-row">
-          <i class="devicon-c-plain colored" title="C"></i>
-          <i class="devicon-cplusplus-plain colored" title="C++"></i>
-          <i class="devicon-csharp-plain colored" title="C#"></i>
-          <i class="devicon-python-plain colored" title="Python"></i>
-          <i class="devicon-java-plain colored" title="Java"></i>
-          <i class="devicon-kotlin-plain colored" title="Kotlin"></i>
-        </div>
-
-        <h3>Game Development</h3>
-        <div class="skills-row">
-          <img src="images/unreal-engine-svgrepo-com.svg" alt="Unreal Engine" title="Unreal Engine" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" title="Unity" />
-          <i class="devicon-opengl-plain colored" title="OpenGL"></i>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/SFML_Logo.svg" alt="SFML" title="SFML" />
-        </div>
-
-        <h3>Backend</h3>
-        <div class="skills-row">
-          <i class="devicon-flask-original white" title="Flask"></i>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Slide -->
-    <section class="slide projects" id="projects">
-      <div class="content">
-        <h2>GameDev Projects</h2>
-
-        <!-- Unreal Engine 5 -->
-        <div class="project-group">
-          <h3>Unreal Engine 5</h3>
-          <div class="project-cards">
-            <!-- Card 1 -->
-            <div class="project-card">
-              <div class="card-image">
-                <!-- replace src with your actual screenshot or placeholder -->
-                <img src="images/flickering.png" alt="Hoverbike Adventure" />
-                <!-- if you don’t have an image yet, you can put a placeholder <div> instead:
-            <div class="card-image--placeholder">Picture</div>
-            -->
-              </div>
-              <div class="project-info">
-                <div class="project-header">
-                  <h4 class="project-title">Flickering (Formerly Unbinding)</h4>
-                  <div class="project-links">
-                    <a href="https://drive.google.com/drive/folders/1LDafxmPzAjU6gIWWHN2sgbMDIxlcqwd8"
-                      target="_blank">Google Drive For Unbinding</a> |
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7335572073618055169/">Demo Video</a>
-                  </div>
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-slides">
+                <!-- Slide 1: Basic Info -->
+                <div class="slide active" id="slide-1">
+                    <div class="slide-content">
+                        <div class="intro-section">
+                            <div class="avatar-container">
+                                <div class="avatar">
+                                    <i class="fas fa-user-astronaut"></i>
+                                </div>
+                            </div>
+                            <h1 class="name">John Space Developer</h1>
+                            <p class="title">Full Stack Space Pizza Engineer</p>
+                            <p class="bio">Delivering code across the galaxy, one commit at a time. Specializing in interplanetary web solutions and cosmic user experiences.</p>
+                            
+                            <div class="social-icons">
+                                <a href="https://github.com" class="social-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com" class="social-link" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="mailto:contact@example.com" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                            
+                            <button class="download-btn" onclick="downloadResume()">
+                                <i class="fas fa-download"></i>
+                                Download Resume
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <p class="project-desc">
-                  Originally developed as Unbinding for Advitiya 2025 Game Jam under the theme “Broken”. A first-person
-                  horror game where the player repairs electrical devices alone at night while evading a hostile entity.
-                  Featured overlay materials, modular interactions, multiple endings, and basic AI.
-                  Now rebranded and expanded as Flickering, with improved level design, press-and-hold interaction
-                  support, modular environment design, and a responsive warning UI for unsafe repair attempts.
-                  Currently implementing advanced ghost AI, multiple endings, and corresponding ending screens.
-                </p>
-                <div class="project-techstack">Unreal Engine 5 | Unreal AI | Blueprints</div>
-              </div>
+
+                <!-- Slide 2: Skills -->
+                <div class="slide" id="slide-2">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Skills & Technologies</h2>
+                        
+                        <div class="skills-section">
+                            <div class="skill-category">
+                                <h3>Web Development</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <i class="fab fa-html5"></i>
+                                        <span>HTML5</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-css3-alt"></i>
+                                        <span>CSS3</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-js-square"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-react"></i>
+                                        <span>React</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-node-js"></i>
+                                        <span>Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Game Development</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Unity</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-cube"></i>
+                                        <span>UE5</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-code"></i>
+                                        <span>SFML</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-vector-square"></i>
+                                        <span>OpenGL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Backend Development</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-database"></i>
+                                        <span>MongoDB</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-server"></i>
+                                        <span>Express</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-cloud"></i>
+                                        <span>AWS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Projects -->
+                <div class="slide" id="slide-3">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Projects Portfolio</h2>
+                        
+                        <div class="projects-section">
+                            <div class="project-category">
+                                <h3>Web Development</h3>
+                                <div class="projects-grid">
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <i class="fas fa-globe"></i>
+                                        </div>
+                                        <div class="project-info">
+                                            <h4>Space Pizza Delivery</h4>
+                                            <p>Full-stack e-commerce platform for interplanetary pizza delivery with real-time tracking.</p>
+                                            <div class="project-tech">
+                                                <span>React</span>
+                                                <span>Node.js</span>
+                                                <span>MongoDB</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                                <a href="#" class="project-link">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <i class="fas fa-rocket"></i>
+                                        </div>
+                                        <div class="project-info">
+                                            <h4>Cosmic Portfolio</h4>
+                                            <p>Interactive space-themed portfolio with 3D animations and stellar navigation.</p>
+                                            <div class="project-tech">
+                                                <span>Three.js</span>
+                                                <span>CSS3</span>
+                                                <span>JavaScript</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                                <a href="#" class="project-link">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-category">
+                                <h3>Game Development</h3>
+                                <div class="projects-grid">
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <i class="fas fa-gamepad"></i>
+                                        </div>
+                                        <div class="project-info">
+                                            <h4>Galaxy Defender</h4>
+                                            <p>2D space shooter game with procedural enemy generation and power-up systems.</p>
+                                            <div class="project-tech">
+                                                <span>Unity</span>
+                                                <span>C#</span>
+                                                <span>Photon</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                                <a href="#" class="project-link">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <i class="fas fa-cube"></i>
+                                        </div>
+                                        <div class="project-info">
+                                            <h4>Pizza Planet Simulator</h4>
+                                            <p>3D simulation game where players manage pizza production on alien worlds.</p>
+                                            <div class="project-tech">
+                                                <span>UE5</span>
+                                                <span>Blueprint</span>
+                                                <span>C++</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                                <a href="#" class="project-link">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-          </div>
         </div>
 
-        <!-- Unity -->
-        <div class="project-group">
-          <h3>Unity</h3>
-          <div class="project-cards">
-            <!-- Card 1 -->
-            <div class="project-card">
-              <div class="card-image">
-                <img src="images/kitchenchaos.png" alt="Rabbit Carrot Collector" />
-              </div>
-              <div class="project-info">
-                <div class="project-header">
-                  <h4 class="project-title">Kitchen Chaos</h4>
-                  <div class="project-links">
-                    <a href="https://rit7.itch.io/kitchen-chaos" target="_blank">Itch.io</a>
-                  </div>
-                </div>
-                <p class="project-desc">
-                  Developed alongside CodeMonkey’s 10-hour Unity course, focusing on clean architecture with
-                  ScriptableObjects, Unity’s new Input System, and event-driven state machines.
-                  Expanded with custom gameplay features such as a kitchen item restocking system, improved UI
-                  responsiveness, and smoother animations using Animator Controllers.
-                  Also explored Shader Graph and separation of logic for scalable and maintainable gameplay design.
-                </p>
-                <div class="project-techstack">Unity | C# | Microsoft Visual Studio</div>
-              </div>
+        <!-- Navigation -->
+        <div class="carousel-nav">
+            <button class="nav-btn prev-btn" onclick="previousSlide()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slide-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
             </div>
-
-
-          </div>
+            <button class="nav-btn next-btn" onclick="nextSlide()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
-
-        <!-- SFML -->
-        <div class="project-group">
-          <h3>SFML</h3>
-          <div class="project-cards">
-            <!-- Card 1 -->
-            <div class="project-card">
-              <div class="card-image">
-                <img src="images/breakout-blitz.png" alt="Sorting Visualizer" />
-              </div>
-              <div class="project-info">
-                <div class="project-header">
-                  <h4 class="project-title">Breakout Blitz</h4>
-                  <div class="project-links">
-                    <a href="https://github.com/your-repo-sorting-visualizer" target="_blank">GitHub</a>
-                  </div>
-                </div>
-                <p class="project-desc">
-                  "Breakout Blitz" is a modern reimagining of the classic Breakout game, developed in C++ using the SFML
-                  library and an ECS (Entity-Component-System) architecture. The game incorporates advanced mechanics,
-                  including dynamic brick destruction, a lifespan feature with visual feedback, and smooth animations.
-                  Perfect for enthusiasts interested in game architecture, physics, and component-based design.
-                </p>
-                <div class="project-techstack">SFML | C++ </div>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="project-card">
-              <div class="card-image">
-                <img src="images/polygon-slayer.png" alt="Networked Pong" />
-              </div>
-              <div class="project-info">
-                <div class="project-header">
-                  <h4 class="project-title">Polygon Slayer</h4>
-                  <div class="project-links">
-                    <a href="https://github.com/your-repo-pong-network" target="_blank">GitHub</a>
-                  </div>
-                </div>
-                <p class="project-desc">
-                  A fast-paced top-down arcade shooter developed using C++ and SFML. Features procedurally generated
-                  polygonal enemies, each with unique shapes and movement behaviors that affect gameplay strategy.
-                  Built with a custom Entity-Component System (ECS) for scalability, along with optimized collision
-                  detection and rendering pipelines. Includes unique player abilities, responsive controls, and polished
-                  moment-to-moment gameplay with increasing difficulty.
-                </p>
-                <div class="project-techstack">SFML | C++</div>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <div class="card-image">
-                <img src="images/Starfield.png" alt="Sorting Visualizer" />
-              </div>
-              <div class="project-info">
-                <div class="project-header">
-                  <h4 class="project-title">Starfield Simulator</h4>
-                  <div class="project-links">
-                    <a href="https://github.com/Joseph-Joestar-7/Starfield_Simulator" target="_blank">GitHub</a> |
-                    <a href="https://www.youtube.com/watch?v=We7SaipzKuM" target="_blank">Youtube</a>
-                  </div>
-                </div>
-                <p class="project-desc">
-                  Starfield Simulation built using C++ with SFML, and Dear ImGui.
-                  This was a weekend experiment to brush up on SFML and ImGui, combining real-time graphics with
-                  interactive
-                  UI. The simulation visualizes stars moving toward the viewer using basic 3D perspective projection,
-                  with
-                  real-time speed control via a simple ImGui interface.
-                </p>
-                <div class="project-techstack">SFML | C++ | ImGUI </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-  </div>
-
-  <!-- Clean Bottom Nav -->
-  <div class="nav">
-    <div class="nav-item" onclick="goToSlide(0)">
-      <div class="nav-label">Home</div>
     </div>
-    <div class="nav-item" onclick="goToSlide(1)">
-      <div class="nav-label">Skills</div>
-    </div>
-    <div class="nav-item" onclick="goToSlide(2)">
-      <div class="nav-label">Projects</div>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
